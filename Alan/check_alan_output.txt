@@ -1,0 +1,34 @@
+Original image ('um_000000.png') info:
+    img_dtype: uint8
+    max_val: 255
+    min_val: 0
+
+Check: flip image
+    flipped image's info:
+        img_dtype: uint8
+        max_val: 255
+        min_val: 0
+    After normalized by (image_flip - np.ones(shape)*128)/256:
+        img_dtype: float64
+        max_val: 0.49609375
+        min_val: -0.5
+
+Check: increase image contrast
+    contrast increased image's info:
+        img_dtype: uint8
+        max_val: 255
+        min_val: 0
+    After normalized by (image_contrast - np.ones(shape)*128)/256:
+        img_dtype: float64
+        max_val: 0.49609375
+        min_val: -0.5
+
+Check: increase image brightness
+    brightness increased image's info:
+        img_dtype: uint8
+        max_val: 173
+        min_val: 0
+    After normalized by (image_brightness - np.ones(shape)*128)/256:
+        img_dtype: float64
+        max_val: 0.17578125
+        min_val: -0.5
